@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* :root {
+    --bg-color: #ffffff;
+    --text-color: #000;
+    --primary-color: #2595f0;
+    --secondary-color: #ccc;
+    --tertiary-color: #a09dab;
+    --hover-color: #44bd44;
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --facebook: #0165E1;
+    --instagram: #bc2a8d;
+    --linkedin: #0A66C2;
+    --whatsapp: #25D366;
+} */
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media only screen and (max-width: 767px) {
+
+    :root {
+        --fs-big: 2.3rem;
+        --fs-se-big: 1.6rem;
+        --fs-th-big: 1.2rem;
+        --fs-md: 1.1rem;
+        --fs-se-md: 1rem;
+        --fs-th-md: 0.9rem;
+        --fs-sm: 0.8rem;
+        --fs-se-sm: 0.7rem;
+        --fs-th-sm: 0.6rem;
+    }
+
+    .college_box {
+        flex-direction: column;
+        height: 135px;
+        padding: 3% 6%;
+    }
+
+    .college_dropdown {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .college_dropdown select {
+        width: 55%;
+    }
+
+    .college_name {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: 240px;
+        justify-content: flex-end;
+        padding-bottom: 0px;
+        transition: all 0.8s ease-in-out;
+    }
+
+    .h_nav {
+        height: 70px;
+    }
+
+    .v_class {
+        visibility: hidden;
+        transition: none;
+    }
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 20%;
+        width: 50px;
+        height: 47px;
+    }
+
+    .navlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: 160px;
+        left: 100px;
+    }
+
+    #menu_icon {
+        position: absolute;
+        display: block;
+        top: 17px;
+        right: 20%;
+    }
+
+    .navlist li {
+        padding: 0px 20px;
+        text-align: center;
+        height: 40px;
+    }
+
+    .icons {
+        right: 0px;
+    }
+
+    .navlist li a {
+        color: var(--text-color);
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .navlist li a:hover::after {
+        width: 0%;
+    }
+
+    .navlist ul {
+        right: 105px;
+        top: 0px;
+        width: 225px;
+        z-index: 20000;
+        box-shadow: 2px 2px 5px grey, -2px 2px 5px grey, 0px 2px 5px grey;
+    }
+
+    .navlist ul ul {
+        /* left: 0px;
+        top: 38px; */
+        left: 200px;
+        top: -15px;
+        z-index: 30000;
+        box-shadow: 2px 2px 5px gray;
+    }
+
+    .navlist_branch>.icons {
+        right: 70px;
+    }
+
+    li:hover>.icons {
+        transform: rotate(90deg);
+    }
+
+    .pad-top {
+        padding-top: 35% !important;
+    }
+
+    .home_container {
+        flex-direction: column-reverse;
+    }
+
+    .home_data {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .img_data {
+        width: 100%;
+    }
+
+    .branch_data {
+        flex-wrap: wrap;
+    }
+
+    .branch_data .branch_both {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+    .share_box {
+        width: 60vw;
+        height: 320px;
+    }
+
+    .share_title {
+        align-items: flex-start;
+    }
+
+    .sm_list a {
+        width: 55px;
+        height: 55px;
+    }
+
+    .copy_btn {
+        padding: 5px 10px;
+    }
+
+    .col_md {
+        width: 48%;
+    }
+
+    .sbd_column .sbd_action {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .sbd_column .sbd_mg {
+        margin-bottom: 0px;
+    }
+
+    .sbd_column .sbd_downloads {
+        width: 35%;
+    }
+
+    .sbd_column .sbd_preview {
+        width: 30%;
+    }
+
+    .sbd_column .sbd_share {
+        width: 25%;
+    }
+
+    .contact_us .section_heading {
+        margin-bottom: 3rem;
+    }
+
+    .contact_box {
+        justify-content: center;
+    }
+
+    .contact_left {
+        display: none;
+    }
+
+    .con_form {
+        width: 70%;
+        padding-top: 20px;
+    }
+
+
+    textarea {
+        height: 90px;
+    }
+
+    form input[type="submit"] {
+        padding: 10px 15px;
+    }
+
+    .footer {
+        height: 80px;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 480px) {
+
+    :root {
+        --fs-big: 2.15rem;
+        --fs-se-big: 1.5rem;
+        --fs-th-big: 1.1rem;
+        --fs-md: 1rem;
+        --fs-se-md: 0.9rem;
+        --fs-th-md: 0.8rem;
+        --fs-sm: 0.7rem;
+        --fs-se-sm: 0.6rem;
+        --fs-th-sm: 0.5rem;
+    }
+
+    .college_box {
+        height: 125px;
+        padding: 3% 5%;
+    }
+
+    .college_dropdown label {
+        margin-right: 0px;
+    }
+
+    .college_dropdown select {
+        padding: 10px 5px;
+        width: 50%;
+    }
+
+    .navlist ul {
+        right: 100px;
+        width: 200px;
+    }
+
+    .navlist ul ul {
+        left: 135px;
+        top: -7px;
+        width: 185px;
+    }
+
+    .pad-top {
+        padding-top: 45% !important;
+    }
+
+    .branch_data .branch_both {
+        width: 90%;
+    }
+
+    .share_box {
+        width: 80vw;
+        height: 310px;
+    }
+
+    .sm_list a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .copy_btn {
+        padding: 5px;
+    }
+
+    .syllabus {
+        padding: 5%;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .col_sm {
+        width: 90%;
+    }
+
+    .syllabus .sbd_column {
+        margin-bottom: 8%;
+    }
+
+    .sbd_column .sbd_action {
+        flex-wrap: nowrap;
+    }
+
+    .contact_us {
+        padding-top: 10%;
+    }
+
+    .footer p {
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+}
+
+/* Media Query for foldable mobiles */
+@media only screen and (max-width: 350px) {
+
+    :root {
+        --fs-big: 2.1rem;
+        --fs-se-big: 1.45rem;
+        --fs-th-big: 1rem;
+        --fs-md: 0.95rem;
+        --fs-se-md: 0.85rem;
+        --fs-th-md: 0.75rem;
+        --fs-sm: 0.65rem;
+        --fs-se-sm: 0.55rem;
+        --fs-th-sm: 0.5rem;
+    }
+
+    .college_box {
+        padding: 7% 5%;
+    }
+
+    .college_dropdown select {
+        width: 70%;
+    }
+
+    .navbar {
+        height: 210px;
+    }
+
+    .h_nav {
+        height: 60px;
+    }
+
+    .logo {
+        width: 45px;
+        height: 42px;
+    }
+
+    .navlist {
+        height: 140px;
+    }
+
+    .navlist li {
+        padding: 0px 15px;
+        height: 35px;
+    }
+
+    .navlist ul {
+        right: 66px;
+        width: 175px;
+    }
+
+    .navlist ul ul {
+        left: 60px;
+        top: 33px;
+        width: 165px;
+    }
+
+    .navlist_branch>.icons {
+        position: absolute;
+        bottom: 12px;
+        right: 75px;
+    }
+
+    .branch_list li:hover>.icons {
+        transform: rotate(180deg);
+    }
+
+    .pad-top {
+        padding-top: 60% !important;
+    }
+
+    .share_box {
+        width: 90vw;
+        height: 280px;
+        padding: 10px 7px;
+    }
+
+    .share_title {
+        padding: 20px 15px 10px;
+    }
+
+    .sm_list a {
+        width: 38px;
+        height: 38px;
+    }
+
+    .sbd_column .sbd_action {
+        flex-wrap: wrap;
+    }
+
+    .contact_us .section_heading {
+        margin-bottom: 2rem;
+    }
+
+    .con_form {
+        width: 95%;
+    }
+
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 767px) and (max-width: 1024px) {
+
+    :root {
+        --fs-big: 2.5rem;
+        --fs-se-big: 1.8rem;
+        --fs-th-big: 1.35rem;
+        --fs-md: 1.25rem;
+        --fs-se-md: 1.1rem;
+        --fs-th-md: 1rem;
+        --fs-sm: 0.9rem;
+        --fs-se-sm: 0.8rem;
+        --fs-th-sm: 0.6rem;
+    }
+
+    .college_box {
+        align-items: flex-start;
+    }
+
+    .college_dropdown {
+        width: 57%;
+    }
+
+    .college_name {
+        width: 40%;
+    }
+
+    .navbar {
+        padding: 7px 8%;
+    }
+
+    .navlist ul {
+        box-shadow: 2px 2px 5px grey, -2px 2px 5px grey, 0px 2px 5px grey;
+        top: 40px;
+        width: 220px;
+    }
+
+    .navlist ul ul {
+        box-shadow: 2px 2px 5px gray;
+        left: 215px;
+        top: -6px;
+    }
+
+    .pad-top {
+        padding-top: 17% !important;
+    }
+
+    .home {
+        padding: 10% 5% 5%;
+    }
+
+    .home_data {
+        width: 45%;
+    }
+
+    .home_para {
+        line-height: 1.5rem;
+    }
+
+    .img_data {
+        width: 55%;
+    }
+
+    .branch_container {
+        padding: 4% 4% 8%;
+    }
+
+    .section_heading {
+        margin-bottom: 35px;
+    }
+
+    .branch_data {
+        justify-content: space-between;
+    }
+
+    .branch_data .branch_both {
+        width: 24%;
+    }
+
+    .branch_data .branch_box {
+        height: 155px;
+    }
+
+    .share_box {
+        width: 43vw;
+        height: 320px;
+    }
+
+    .sm_list a {
+        width: 60px;
+        height: 60px;
+    }
+
+    .copy_btn {
+        padding: 5px 10px;
+    }
+
+    .col_md {
+        width: 48%;
+    }
+
+    .sbd_action span {
+        /* display: block; */
+        margin-top: 3px;
+        text-align: center;
+    }
+
+    .syllabus .sbd_column {
+        padding: 7px;
+    }
+
+    .sbd_column .sbd_action {
+        justify-content: space-around;
+        margin: 10px 0 0 6px;
+    }
+
+    .sbd_column .card_data {
+        margin-top: 5px;
+    }
+
+    .card_data .card_cla {
+        font-size: var(--fs-md);
+    }
+
+    .card_data h4 {
+        font-size: var(--fs-md);
+    }
+
+    .contact_us {
+        padding: 5%;
+    }
+
+    .contact_us .section_heading {
+        margin-bottom: 3rem;
+    }
+
+    .contact_left {
+        width: 45%
+    }
+
+    .con_form {
+        width: 50%;
+        padding-top: 15px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    form input[type="submit"] {
+        padding: 10px 15px;
+    }
+
+    .footer {
+        height: 100px;
+    }
+
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+    :root {
+        --fs-big: 2.7rem;
+        --fs-se-big: 1.9rem;
+        --fs-th-big: 1.5rem;
+        --fs-md: 1.4rem;
+        --fs-se-md: 1.2rem;
+        --fs-th-md: 1.1rem;
+        --fs-sm: 1rem;
+        --fs-se-sm: 0.9rem;
+        --fs-th-sm: 0.7rem;
+    }
+
+    .pad-top {
+        padding-top: 20% !important;
+    }
+
+    .home {
+        padding: 10% 5% 5%;
+    }
+
+    .share_box {
+        width: 35vw;
+        height: 325px;
+    }
+
+    .copy_btn {
+        padding: 5px 10px;
+    }
+
+    .sbd_action span {
+        display: block;
+        margin-top: 3px;
+        text-align: center;
+    }
+
+    .sbd_column .card_data {
+        margin-top: 5px;
+    }
+
+    textarea {
+        height: 125px;
+    }
+
+
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1280px) {
+
+    :root {
+        --fs-big: 3.5rem;
+        --fs-se-big: 2.5rem;
+        --fs-th-big: 2rem;
+        --fs-md: 1.8rem;
+        --fs-se-md: 1.6rem;
+        --fs-th-md: 1.4rem;
+        --fs-sm: 1.3rem;
+        --fs-se-sm: 1.2rem;
+        --fs-th-sm: 1.1rem;
+    }
+
+    .home {
+        padding: 5% 8%;
+    }
+
+    .share_box {
+        width: 30vw;
+        height: 360px;
+    }
+
+    .sm_list a {
+        width: 70px;
+        height: 70px;
+    }
+
+}
