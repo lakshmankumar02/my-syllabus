@@ -672,4 +672,8 @@
         height: 70px;
     }
 
+    .navlist ul{
+        width: 260px;
+    }
+
 }
