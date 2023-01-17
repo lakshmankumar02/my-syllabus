@@ -96,7 +96,8 @@ let inputSelect = document.querySelector(".share_copy input");
 const sharebtn = document.querySelectorAll(".sbd_share");
 
 // set localhost
-let localHost = "http://127.0.0.1:5500/";
+// let localHost = "http://127.0.0.1:5500/";
+let localHost = "https://lakshmankumar22.github.io/my-syllabus/";
 
 // syllabus time for select which year or which class syllabus is
 let syllabusTime = [
